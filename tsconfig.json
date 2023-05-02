@@ -1,0 +1,45 @@
+// {
+//   "extends": "@tsconfig/react-native/tsconfig.json"
+// }
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "React Native",
+  "_version": "2.0.3",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "types": ["react-native", "jest"],
+    "lib": ["es2019"],
+    "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@assets/*": ["SRC/assets/*"],
+      "@components/*": ["SRC/components/*"],
+      "@constants/*": ["SRC/constants/*"],
+      "@context/*": ["SRC/context/*"],
+      "@navigation/*": ["SRC/navigation/*"],
+      "@redux/*": ["SRC/redux/*"],
+      "@screens/*": ["SRC/screens/*"],
+      "@services/*": ["SRC/services/*"],
+      "@utils/*": ["SRC/utils/*"],
+      "@config/*" : ["SRC/config/*"],
+      "@root/*":["SRC/Root/*"]
+    },
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
